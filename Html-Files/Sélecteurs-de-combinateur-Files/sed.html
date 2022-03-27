@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" href ="../../Css-Files/Sélecteurs-de-combinateur-Files/sed.css"/>
+    <title>Le sélecteur d'élément descendant</title>
+</head>
+<body >
+    <div>
+        <h1 class="titre">Le sélecteur d'élément descendant</h1><br>
+        <p>Le <strong>combinateur de descendance</strong>, représenté par un blanc (ou plusieurs blancs à la suite) permet de combiner deux sélecteurs  <br>
+            (sous la forme <code>sélecteur₁ sélecteur₂</code>) afin de cibler les éléments qui correspondent au second sélecteur uniquement  <br>
+            si ceux-ci ont un élément ancêtre qui correspond au premier sélecteur. Les sélecteurs qui  <br>
+            utilisent ce combinateur sont souvent appelés des sélecteurs de descendants.</p>
+    </div>
+    <div>
+         <pre><code>/* Les éléments &ltli&gt qui sont des descendants */
+/* d'un &ltul class="mon-truc"&gt */
+ul.mon-truc li {
+    margin: 2em;
+            }</code></pre>
+        <p class="NoMargin">Techniquement, le combinateur de descendance est représenté par un ou plusieurs blancs (les caractères qui sont des blancs sont : l'espace, <br>
+            le retour chariot, le saut de ligne, la tabulation verticale, la tabulation horizontale) entre deux sélecteurs lorsqu'il n'y a aucun autre combinateur. <br>
+             Les blancs utilisés pour le combinateur peuvent éventuellement contenir des commentaires CSS.</p>
+    </div>
+        <h2>Syntaxe</h2>
+    <div>
+        <pre><code>selecteur1 selecteur2 { /* déclarations CSS */ }</code></pre>
+   </div>
+        <h2>Exemple</h2>
+        <h3>CSS</h3>
+    <div>
+        <pre><code>li {
+            list-style-type: disc;
+          }
+          
+          li li {
+            list-style-type: circle;
+          }</code></pre>
+    </div>
+        <h3>HTML</h3>
+    <div >
+        <pre><code>&ltul&gt
+    &ltli&gt
+        &ltdiv&gtÉlément 1&lt/div&gt
+        &ltul&gt
+            &ltli&gtSous-élément A&lt/li&gt
+            &ltli&gtSous-élément B&lt/li&gt
+        &lt/ul&gt
+    &lt/li&gt
+    &ltli&gt
+        &ltdiv&gtÉlément 2&lt/div&gt
+        &ltul&gt
+            &ltli&gtSous-élément A&lt/li&gt
+            &ltli&gtSous-élément B&lt/li&gt
+        &lt/ul&gt
+    &lt/li&gt
+    &lt/ul&gt</code></pre>
+    </div>
+        <h3>Résultat</h3>
+        <div class="sample-code-frame"><ul>
+            <li>
+              <div>Élément 1</div>
+              <ul>
+                <li>Sous-élément A</li>
+                <li>Sous-élément B</li>
+              </ul>
+            </li>
+            <li>
+              <div>Élément 2</div>
+              <ul>
+                <li>Sous-élément A</li>
+                <li>Sous-élément B</li>
+              </ul>
+            </li>
+          </ul>
+          
+        </div>
+</body>
+</html>

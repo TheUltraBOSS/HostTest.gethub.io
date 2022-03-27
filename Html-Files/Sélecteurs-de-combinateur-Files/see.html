@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" href ="../../Css-Files/Sélecteurs-de-combinateur-Files/see.css"/>
+    <title>Le sélecteur d'élément enfant</title>
+</head>
+<body >
+    <div>
+        <h1 class="titre">Le sélecteur d'élément enfant</h1><br>
+        <p>Le combinateur <code>&gt</code> sépare deux sélecteurs et cible seulement les éléments correspondant au second sélecteur <br> qui sont des enfants directs des éléments ciblés par le premier sélecteur.</p>
+    </div>
+    <div>
+         <pre><code>/* Les éléments &ltli&gt qui sont des enfant d'un */
+/* &ltul class="mon-truc"&gt */
+ul.mon-truc>li {
+    margin: 2em;
+            }</code></pre>
+        <p class="NoMargin">En comparaison, lorsque deux sélecteurs sont combinés à l'aide du sélecteur descendant, l'expression  formée par la combinaison <br> des deux sélecteurs cible les éléments correspondant au second sélecteur qui ont un parent de n'importe quel <br>niveau qui correspond au premier sélecteur, quelque soit le nombre de « sauts » dans le DOM.</p>
+    </div>
+        <h2>Syntaxe</h2>
+    <div>
+        <pre><code>selecteur1 > selecteur2 { déclarations CSS }</code></pre>
+   </div>
+        <h2>Exemple</h2>
+        <h3>CSS</h3>
+    <div>
+        <pre><code>span {
+            background-color: white;
+          }
+          
+          div > span {
+            background-color: blue;
+          }</code></pre>
+    </div>
+        <h3>HTML</h3>
+    <div >
+        <pre><code>&ltdiv&gt
+&ltspan&gtPremier span du div.
+&ltspan&gtDeuxième span, dans un span dans un div.&lt/span&gt
+&lt/span&gt
+&lt/div&gt
+&ltspan&gtTroisième span, en dehors de tout div.&lt/span&gt
+        </code></pre>
+    </div>
+        <h3>Résultat</h3>
+        <div class="sample-code-frame">
+            <span>Premier span du div.</span> Deuxième span, dans un span dans un div. <br>
+Troisième span, en dehors de tout div.
+        </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" href ="../Css-Files/SC.css"/>
+    <title>Sélecteurs de combinateur</title>
+</head>
+<body class="scbody">
+    <h1 class="titre"><u>Sélecteurs de combinateur</u></h1> 
+    <ol>
+        <li class="BigTitles"><a href="Sélecteurs-de-combinateur-Files/svd.html" target="_blank">Le selecteur adjacent:</a></li>
+            <ul>
+                <li><strong>Définition:</strong> Le combinateur <code>'+'</code> permet de sélectionner les nœuds qui suivent immédiatement un élément donné.</li>
+                <li><strong>Syntaxe :</strong> <code>A + B</code>.</li>
+                <li><strong>Exemple:</strong>  <code>div + p</code> permettra de cibler n'importe quel élément <code>&ltp&gt</code> qui suit immédiatement un élément <code>&ltdiv&gt</code>.</li>
+            </ul><br>
+        <li class="BigTitles"><a href="Sélecteurs-de-combinateur-Files/sv.html" target="_blank">Le sélecteur général adjacent</a></li>
+            <ul>
+                <li><strong>Définition:</strong> Le combinateur <code>'~'</code> permet de sélectionner les nœuds qui suivent un élément et qui ont le même parent. </li>
+                <li><strong>Syntaxe :</strong> <code>A ~ B</code>.</li>
+                <li><strong>Exemple:</strong> <code>p ~ span</code> permettra de cibler les éléments <code>&ltspan&gt</code> qui suivent (immédiatement ou non) un élément <code>&ltp&gt</code> et qui ont le même élément parent.</li>
+            </ul><br>
+        <li class="BigTitles"><a href="Sélecteurs-de-combinateur-Files/see.html" target="_blank">Le sélecteur d'élément enfant:</a></li>
+            <ul>
+                <li><strong>Définition:</strong> Le combinateur <code>'>'</code> permet de sélectionner les nœuds qui sont des enfants directs d'un élément donné. </li>
+                <li><strong>Syntaxe :</strong> <code>A > B</code></li>
+                <li><strong>Exemple:</strong> <code>ul > li</code> permettra de cibler tous les éléments <code>&ltli&gt</code> qui sont directement situés sous un élément <code>&ltul&gt</code>.</li>
+            </ul><br>
+        <li class="BigTitles"><a href="Sélecteurs-de-combinateur-Files/sed.html" target="_blank">Le sélecteurs d'élément descendant:</a></li>
+            <ul>
+                <li><strong>Définition:</strong> Le combinateur<code>  </code>(espace) permet de sélectionner les nœuds qui sont des descendants (pas nécessairement des enfants directs) d'un élément donné. </li>
+                <li><strong>Syntaxe :</strong> <code>A B</code>.</li>
+                <li><strong>Exemple:</strong> <code>div span</code> permettra de cibler n'importe quel élément <code>&ltspan&gt</code> situé à l'intérieur d'un élément <code>&ltdiv&gt</code>.</li>
+            </ul><br>
+        <li class="BigTitles">Le combinateur de colonne:</li>
+        <!-- Experimental: Cette fonction est expérimentale
+Puisque cette fonction est toujours en développement dans certains navigateurs, veuillez consulter le tableau de compatibilité pour les préfixes à utiliser selon les navigateurs.
+Il convient de noter qu'une fonctionnalité expérimentale peut voir sa syntaxe ou son comportement modifié dans le futur en fonction des évolutions de la spécification. -->
+            <ul>
+                <li><strong>Définition:</strong> Le combinateur <code>||</code> sélectionne les nœuds qui appartiennent à une colonne. </li>
+                <li><strong>Syntaxe :</strong> <code>A || B</code></li>
+                <li><strong>Exemple:</strong> <code>col || td</code> permettra de cibler n'importe quel élément <code>&lttd&gt</code> sous la portée d'une colonne <code>&ltcol&gt</code>.</li>
+            </ul>
+    </ol>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" href ="../Css-Files/SPE.css"/>
+    <title>Sélecteurs de pseudo-éléments</title>
+</head>
+<body>
+    <h1 class="titre">Sélecteurs de pseudo-éléments</h1>
+    <p>Un pseudo-élément est un mot-clé ajouté à un sélecteur qui permet de mettre en forme certaines parties de l'élément ciblé par la règle. Ainsi,  <br>le pseudo-élément ::first-line permettra de ne cibler que la première ligne d'un élément visé par le sélecteur.</p>
+</div>
+<div>
+     <pre><code>/* La première ligne de chaque élément &ltp&gt. */
+p::first-line {
+    color: blue;
+    text-transform: uppercase;
+}</code></pre>
+    <p class="NoMargin">On ne peut utiliser qu'un seul pseudo-élément dans un sélecteur. Le pseudo-élément doit apparaître après les sélecteurs simple de la déclaration</p>
+</div>
+<div class="Note">
+   <strong class="Color">Note</strong> : À la différence des pseudo-éléments, les pseudo-classes peuvent être utilisées afin de mettre en forme un élément en fonction de son état.
+</div>
+    <h2>Syntaxe</h2>
+<div>
+    <pre><code>sélecteur::pseudo-élément {
+    propriété: valeur;
+}</code></pre>
+<p class="NoMargin">À l'instar des classes, on peut chaîner plusieurs pseudo-classes au sein <br> d'un sélecteur.</p>
+<p class="NoMargin">Depuis CSS3, on utilise deux fois le caractère deux-points (:) pour préfixer les pseudo-éléments <br> (afin de pouvoir les différencier des pseudo-classes). Toutefois, la plupart des navigateurs prennent <br> en charge les pseudo-éléments pour lesquels le préfixe n'est formé que d'un seul « : ».</p>
+<h1 class="Secondtitre">Liste des pseudo-classes standards</h1>
+
+<div class="LongList">
+    <ul>
+        <li><code>::after (:after)</code></li> 
+        <li><code>::backdrop</code></li> 
+        <li><code>::before (:before)</code></li> 
+        <li><code>::cue (:cue)</code></li> 
+        <li><code>::first-letter (:first-letter)</code></li> 
+        <li><code>::first-line (:first-line)</code></li> 
+        <li><code>::grammar-error</code></li> 
+        <li><code>::marker</code></li> 
+        <li><code>::part</code></li> 
+        <li><code>::placeholder</code></li> 
+        <li><code>::selection</code></li> 
+        <li><code>::slotted()</code></li> 
+        <li><code>::spelling-error</code></li> 
+    </ul>
+</div>
+
+    <h2>Exemple</h2>
+    <h3>CSS</h3>
+<div>
+    <pre><code>p::first-line {
+    color: blue;
+}</code></pre>
+</div>
+    <h3>HTML</h3>
+<div >
+    <pre><code>&ltp&gt
+        C’était le Lapin Blanc qui revenait en trottinant,
+        et qui cherchait de tous côtés, d’un air inquiet,
+        comme s’il avait perdu quelque chose ; Alice
+        l’entendit qui marmottait : « La Duchesse ! La
+        Duchesse ! Oh ! mes pauvres pattes ; oh ! ma robe
+        et mes moustaches ! Elle me fera guillotiner aussi
+        vrai que des furets sont des furets ! Où pourrais-je
+        bien les avoir perdus ? » Alice devina tout de suite
+        qu’il cherchait l’éventail et la paire de gants paille,
+        et, comme elle avait bon cœur, elle se mit à les
+        chercher aussi ; mais pas moyen de les trouver.
+&lt/p&gt</code></pre>
+</div>
+    <h3>Résultat</h3>
+    <div class="sample-code-frame">
+        <p >
+            <span class="FirstLine"> C’était le Lapin Blanc qui revenait en trottinant,
+            et qui cherchait de tous côtés, d’un air inquiet,
+            comme s’il</span> avait perdu quelque chose ; Alice
+            l’entendit qui marmottait : « La Duchesse ! La
+            Duchesse ! Oh ! mes pauvres pattes ; oh ! ma robe
+            et mes moustaches ! Elle me fera guillotiner aussi
+            vrai que des furets sont des furets ! Où pourrais-je
+            bien les avoir perdus ? » Alice devina tout de suite
+            qu’il cherchait l’éventail et la paire de gants paille,
+            et, comme elle avait bon cœur, elle se mit à les
+            chercher aussi ; mais pas moyen de les trouver.
+          </p>
+          
+      </div>
+      
+</body>
+</html>

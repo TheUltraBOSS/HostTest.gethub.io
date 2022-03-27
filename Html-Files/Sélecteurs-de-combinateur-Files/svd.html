@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" href ="../../Css-Files/Sélecteurs-de-combinateur-Files/svd.css"/>
+    <title>Le selecteur adjacent</title>
+</head>
+<body class="svdbody">
+    <div>
+        <h1 class="titre">Le selecteur adjacent</h1><br>
+        <p>Cette forme de combinateur permet de sélectionner un élément uniquement si celui-ci <br> « suit » un élément
+        donné et que les deux éléments sont les fils d'un même élément parent.</p>
+    </div>
+    <div>
+         <pre><code>/* Ne cible que les paragraphes situé directement après une image */
+            img + p {
+              font-style: bold;
+            }</code></pre>
+    </div>
+        <h2>Syntaxe</h2>
+    <div>
+        <pre><code>premier_element + element_cible { styles }</code></pre>
+   </div>
+        <h2>Exemple</h2>
+        <h3>CSS</h3>
+    <div>
+        <pre><code>li:first-of-type + li {
+            color: red;
+          }</code></pre>
+    </div>
+        <h3>HTML</h3>
+    <div >
+        <pre><code>&ltul&gt
+           &ltli&gtUn&lt/li&gt
+           &ltli&gtDeux&lt/li&gt
+           &ltli&gtTrois&lt/li&gt
+&lt/ul&gt 
+          </code></pre>
+    </div>
+        <h3>Résultat</h3>
+    <div class="sample-code-frame">
+        <ul>
+            <li>Un</li>
+            <li class="Deux">Deux</li>
+            <li>Trois</li>
+        </ul>
+    </div>
+</body>
+</html>

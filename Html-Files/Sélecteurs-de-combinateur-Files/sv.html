@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" href ="../../Css-Files/Sélecteurs-de-combinateur-Files/sv.css"/>
+    <title>Le sélecteur général adjacent</title>
+</head>
+<body>
+    <div>
+        <h1 class="titre">Le sélecteur général adjacent</h1><br>
+        <p>Le combinateur ~ permet de séparer deux sélecteurs et de cibler un élément si celui-ci correspond au second sélecteur <br> et est précédé (mais pas forcément voisin immédiat)
+             d'un autre élément correspondant au premier sélecteur qui partage le même parent.<br> Les deux éléments sont des fils d'un même parent Element, voisins immédiats ou pas.</p>
+    </div>
+    <div>
+         <pre><code>/* Parmi tous les éléments <img>, cibler tous
+            éléments &ltp&gt qui les suivent. */
+         img ~ p {
+           color: red;
+         }</code></pre>
+    </div>
+        <h2>Syntaxe</h2>
+    <div>
+        <pre><code>premier_element ~ second_element { propriétés de style }</code></pre>
+   </div>
+        <h2>Exemple</h2>
+        <h3>CSS</h3>
+    <div>
+        <pre><code>p ~ span {
+            color: red;
+          }</code></pre>
+    </div>
+        <h3>HTML</h3>
+    <div >
+        <pre><code>&ltspan&gtIci, ce n'est pas rouge.&lt/span&gt
+&ltp&gtVoici un paragraphe.&ltp&gt
+&ltcode&gtUn peu de code.&lt/code&gt
+&ltspan&gtEt un autre span.&lt/span&gt
+&ltcode&gtEncore du code&lt/code&gt
+&ltspan&gtIci aussi, c'est rouge&lt/span&gt
+        </code></pre>
+    </div>
+        <h3>Résultat</h3>
+        <div class="sample-code-frame">
+            Ici, ce n'est pas rouge. <br> <br>
+Voici un paragraphe. <br> <br>
+
+Un peu de code. <span>Et un autre span.</span> Encore du code Ici aussi, <span>c'est rouge</span>
+        </div>
+</body>
+</html>
