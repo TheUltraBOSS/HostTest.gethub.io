@@ -1,0 +1,112 @@
+h1 {
+    font-size: 3.052rem;
+    font-family: zillaslab,palatino,"Palatino Linotype",serif;
+    letter-spacing: .035rem;
+    line-height: 1.2;
+    
+}
+p {
+    font-size: larger;
+    margin-top: -20px;
+    text-align: center;
+}
+
+code, pre {
+    background-color: #f4f4f4;
+}
+
+pre {
+    border-left: 6px solid #005282;
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: auto; 
+    max-width: 100%;
+    overflow: auto;
+    padding: 24px;
+    width: 45%;
+}
+
+.titre {
+    text-align:center ;
+}
+
+h2,h3 {
+    font-family: zillaslab,palatino,"Palatino Linotype",serif;
+    letter-spacing: .035rem;
+    line-height: 1.2;
+    margin-left: 26%;
+    font-size: 30px
+}
+
+h3 {
+    font-size: 1.953rem;
+    font-weight: 400;
+}
+
+textarea {
+    margin-left: 25%;
+}
+
+.sample-code-frame, .Note{
+    border: 1px solid #0072b3;
+    border-left: 6px solid #005282;
+    margin: auto;
+    width: 46%;
+    text-align: left ;
+    padding: 24px ;
+
+}
+
+span {
+    background-color:blue;
+}
+
+.NoMargin {
+    margin-top: 20px;
+}
+
+.NoColor {
+    background-color: #ffffff;
+    
+}
+
+.Color {
+ color: red;
+}
+.Note {
+    background-color: #ddeaff;
+}
+.Secondtitre {
+	font-family: zillaslab,palatino,"Palatino Linotype",serif;
+	letter-spacing: .035rem;
+    line-height: 1.2;
+    margin-left: 26%;
+	font-size: 40px;
+}
+
+.LongList {
+	margin: auto;
+    width: 46%;
+    text-align: left ;
+    padding: 24px ;
+}
+
+.LongList,.LongList2 { 
+
+    font-size: 1.4rem;
+    line-height: 1.4;
+	display: inline-block;
+	width: 15%;
+	margin-left: 25%;
+}
+.LongList2 {
+	margin-left: 10%;
+}
+
+.survol:hover {
+	background-color: palegreen;
+  }
+  
+  p:nth-child(2n+1) {
+	background-color: lime;
+  }

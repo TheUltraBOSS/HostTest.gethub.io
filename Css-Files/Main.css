@@ -1,0 +1,30 @@
+.titre {
+	text-align:center;
+	}
+.Main-body {
+	padding-left: 15px;
+}
+.intro {
+	color:red;
+	font-size:45px;
+	}
+.Orderedlist {
+	color:rgb(38, 241, 20);
+	font-size:30px;
+	}
+
+.img {
+	background-color: rgb(164, 245, 157);
+	text-align: center;
+	display: inline-block;
+}
+.UnderImg {
+	display: inline-block;
+	vertical-align: top;
+}
+span {
+	color: green;
+	}
+.main-page-content a {
+	text-decoration: underline;
+}
